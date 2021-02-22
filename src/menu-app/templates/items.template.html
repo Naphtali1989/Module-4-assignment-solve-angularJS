@@ -1,0 +1,9 @@
+<h3>Showing menu for {{itemsCtrl.chosenCat}}</h3>
+<span>*Prices for: (Large Portion) / (Small Portion)*</span>
+
+<ul>
+    <li ng-repeat="item in itemsCtrl.items">
+        <h4>{{item.name}}: <span> {{item.price_large | currency}} / {{item.price_small | currency}} </span></h4>
+        <p>{{item.description}}</p>
+    </li>
+</ul>
